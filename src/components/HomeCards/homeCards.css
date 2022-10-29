@@ -1,0 +1,45 @@
+.home_section {
+    background: #F7F7F7;
+    border-radius: 25px;
+    margin-top: 45px;
+    padding: 56px 50px 56px 50px;
+}
+
+.cards_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.each_card {
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,rgba(0, 0, 0, 0.4) 100%);
+    background-color: #FF6060;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    width: 410px;
+    height: 340px;
+}
+
+.each_card:hover {
+    box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.3);
+}
+
+.home_img {
+    height: 70%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.card_title {
+    font-weight: 500;
+    width: 300px;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    margin: 20px 20px 20px 20px;
+    text-align: left;
+}

@@ -1,0 +1,22 @@
+
+.div_error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1_error {
+  color: #FF6060;
+  font-size: 250px;
+  line-height: 411px;
+  margin-bottom: 20px;
+}
+
+.h2_error {
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  margin-bottom: 180px;
+  margin-top: 0px;
+}

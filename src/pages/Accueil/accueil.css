@@ -1,0 +1,28 @@
+.accueil_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.accueil_title {
+    position: absolute;
+    z-index: 9999;
+    color: white;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 68px;
+}
+
+.accueil_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    position: relative;
+    filter: brightness(0.7);
+    width: 100%;
+    height: auto;
+}
