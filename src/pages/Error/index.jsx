@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import colors from "../../utils/style/color";
 import "./error.css";
 
 const StyledLink = styled(Link)`
-  color: ${colors.primary};
+  color: #ff6060;
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
