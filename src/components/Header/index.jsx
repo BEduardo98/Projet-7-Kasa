@@ -1,11 +1,10 @@
 import logo from "../../assets/HeaderLogo.svg";
 import styled from "styled-components";
-import colors from "../../utils/style/color";
 import { Link } from "react-router-dom";
 import "./header.css";
 
 const StyledLink = styled(Link)`
-  color: ${colors.primary};
+  color: #ff6060;
   font-weight: 500px;
   font-size: 24px;
   line-height: 34px;
