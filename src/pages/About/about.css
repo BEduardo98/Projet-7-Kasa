@@ -1,0 +1,11 @@
+.collapse_about {
+    padding: 0 70px;
+}
+
+.img_banniere {
+    border-radius: 25px;
+    position: relative;
+    filter: brightness(0.7);
+    width: 100%;
+    height: auto;
+}
