@@ -9,7 +9,7 @@ function About() {
       <img src={AboutImg} alt="Montagnes" className="img_banniere" />
       <div className="collapse_about">
         <DropDown
-          name="Fiabilité"
+          name={<h1 className="titre">Fiabilité</h1>}
           description={
             <p>
               Les annonces postées sur Kasa garantissent une fiabilité totale.
@@ -19,7 +19,7 @@ function About() {
           }
         />
         <DropDown
-          name="Respect"
+          name={<h1 className="titre">Respect</h1>}
           description={
             <p>
               La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
@@ -29,7 +29,7 @@ function About() {
           }
         />
         <DropDown
-          name="Service"
+          name={<h1 className="titre">Service</h1>}
           description={
             <p>
               Nos équipes se tiennent à votre disposition pour vous fournir une
@@ -39,7 +39,7 @@ function About() {
           }
         />
         <DropDown
-          name="Sécurité"
+          name={<h1 className="titre">Sécurité</h1>}
           description={
             <p>
               La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
