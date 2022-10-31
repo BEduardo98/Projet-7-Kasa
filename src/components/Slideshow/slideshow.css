@@ -1,0 +1,44 @@
+.carousel {
+    position: relative;
+    height: 415px;
+}
+.carousel-img {
+    width: 100%;
+    object-fit: cover;
+    height: 415px;
+    border-radius: 25px;
+}
+.carousel-btn-left {
+    position: absolute;
+    height: 79.2px;
+    top: 45%;
+    left: 2%;
+    z-index: 10;
+    filter: drop-shadow(1px 1px 20px black);
+}
+.carousel-btn-left:hover {
+    cursor: pointer;
+}
+.carousel-btn-right {
+    position: absolute;
+    height: 79.2px;
+    top: 45%;
+    right: 2%;
+    z-index: 10;
+    filter: drop-shadow(1px 1px 20px black);
+}
+.carousel-btn-right:hover {
+    cursor: pointer;
+}
+.counter-pic {
+    position: absolute;
+    height: 79.2px;
+    right: 50%;
+    top: 85%;
+    z-index: 10;
+    color: #F2F2F2;
+    font-weight: 500;
+}
+.place-slide {
+    margin: 0;
+}
