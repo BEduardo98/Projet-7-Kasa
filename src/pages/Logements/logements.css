@@ -1,0 +1,95 @@
+.container_header_informations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logement_title {
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 51px;
+    margin-bottom: 0;
+}
+
+.logement_location {
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+}
+
+.tags {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    margin-top: 23px;
+}
+
+.tag_infos {
+    background: #FF6060;
+    border-radius:10px ;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    padding: 3px 40px;
+    margin-right: 10px;
+}
+
+.container_infos_profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profil_list{
+    align-items: center;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 28px;
+    margin-bottom: 0;
+}
+
+.profil_name {
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    width: 93px;
+    text-align: right;
+    margin-right:10px ;
+}
+
+.profil_img {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+}
+
+.profil_etoiles {
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+.star {
+    margin-right: 10px;
+}
+
+.container_body_informations {
+    display: flex;
+    justify-content: space-between;
+    margin-top:26px;
+}
+
+.dropdown_equipement {
+    list-style: none;
+    padding: 0;
+    margin-left:20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
