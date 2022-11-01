@@ -16,13 +16,11 @@
     padding-left: 15px;
     padding-right: 15px;
     font-weight: 500;
-    font-family: montserrat;
     font-size: 20px;
     color: #F2F2F2;
 }
 
 .collapse-desc {
-    font-family: montserrat;
     color: #FF6060;
     size: 24px;
     background: #F2F2F2;
@@ -40,4 +38,23 @@
     line-height: 34px;
     margin-left: 18px;
     margin-right: 27px;
+}
+
+@media screen and (max-width: 768px) {
+    .collapse-bloc {
+        width: 100%;
+        padding: 0;
+    }
+    .collapse-btn {
+        height: 30px;
+    }
+    .collapse-desc {
+        padding-top: 10px;
+    }
+    .collapse-desc p {
+        font-size: 12px;
+        line-height: 17px;
+        margin-left: 11px;
+        margin-right: 8px;
+    }
 }

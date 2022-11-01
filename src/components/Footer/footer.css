@@ -21,3 +21,10 @@
     color: white;
     margin-bottom: 29px;
 }
+
+@media screen and (max-width: 768px) {
+    .p_footer {
+        font-size: 12px;
+        line-height: 17px;
+    }
+}

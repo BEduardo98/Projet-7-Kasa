@@ -7,6 +7,10 @@ const StyledLink = styled(Link)`
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 `;
 
 function Error() {

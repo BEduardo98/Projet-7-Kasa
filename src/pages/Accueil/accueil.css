@@ -1,6 +1,5 @@
 .accueil_section {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
@@ -25,4 +24,25 @@
     filter: brightness(0.7);
     width: 100%;
     height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .accueil_section {
+        margin-top: 0px;
+        height: 111px;
+    }
+    .accueil_img {
+        background-image: url("../../assets/MobileHeaderImg.jpg");
+        background-position: bottom;
+        object-fit: cover;
+        height: 111px;
+        border-radius: 10px;
+    }
+    .accueil_title {
+        font-size: 24px;
+        line-height: 24px;
+        width: 62%;
+        left: 10%;
+    }
+    
 }

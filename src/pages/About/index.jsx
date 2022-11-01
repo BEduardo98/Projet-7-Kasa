@@ -6,7 +6,9 @@ import DropDown from "../../components/Dropdown";
 function About() {
   return (
     <main className="container">
-      <img src={AboutImg} alt="Montagnes" className="img_banniere" />
+      <div className="img_div">
+        <img src={AboutImg} alt="Montagnes" className="img_banniere" />
+      </div>
       <div className="collapse_about">
         <DropDown
           name={<h1 className="titre">Fiabilité</h1>}

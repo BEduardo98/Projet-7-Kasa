@@ -26,7 +26,6 @@
 }
 
 .drop-desc {
-    font-family: montserrat;
     color: #FF6060;
     size: 24px;
     background: #F2F2F2;
@@ -45,4 +44,27 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
+}
+
+@media screen and (max-width: 768px) {
+    .drop-bloc {
+        margin-right: 0px;
+    }
+    .drop-btn {
+        font-size: 13px;
+        line-height: 19px;
+        height: 30px;
+    }
+    .flecheBas,.flecheHaut {
+        height: 15px;
+        width: 15px;
+    }
+    .drop-desc {
+        height: auto;
+    }
+    .drop-desc p {
+        margin-left: 12px;
+        font-size: 12px;
+        line-height: 17px;
+    }
 }

@@ -42,3 +42,19 @@
 .place-slide {
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        height: 255px;
+    }
+    .carousel-img {
+        height: 255px;
+        border-radius: 10px;
+    }
+    .carousel-btn-left,.carousel-btn-right {
+        height: 19.8px;
+    }
+    .counter-pic {
+        right: 45%;
+    }
+}

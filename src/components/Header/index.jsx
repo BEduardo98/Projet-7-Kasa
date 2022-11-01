@@ -15,13 +15,20 @@ const StyledLink = styled(Link)`
   &:hover {
     text-decoration: underline;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    line-height: 16px;
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
 `;
 
 function Header() {
   return (
     <header className="header">
       <div>
-        <img src={logo} alt="Logo Kasa" />
+        <img src={logo} alt="Logo Kasa" className="logo_img" />
       </div>
       <nav className="nav">
         <StyledLink to="/">Accueil</StyledLink>

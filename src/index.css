@@ -14,3 +14,18 @@ main, header {
   margin-right: 100px;
   margin-bottom: 0px;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+      margin-top:20px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    main {
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    
+}
