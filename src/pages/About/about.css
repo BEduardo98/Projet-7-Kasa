@@ -19,17 +19,33 @@
     line-height: 34px;
 }
 
-@media screen and (max-width: 768px) {
+.img_banniere_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
     .collapse_about {
         padding: 0;
     }
     .img_banniere {
+        display: none;
+    }
+    .img_banniere_mobile {
+        display: block;
         object-fit: cover;
         height: 223px;
         width: 100%;
+        filter: brightness(0.7);
+        border-radius: 25px;
     }
     .titre {
         font-size: 13px;
         line-height: 19px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .img_banniere_mobile {
+        display: none;
     }
 }

@@ -2,12 +2,18 @@ import "./about.css";
 
 import AboutImg from "../../assets/AboutImg.jpg";
 import DropDown from "../../components/Dropdown";
+import AboutImgMobile from "../../assets/AboutImgMobile.jpg";
 
 function About() {
   return (
     <main className="container">
       <div className="img_div">
         <img src={AboutImg} alt="Montagnes" className="img_banniere" />
+        <img
+          src={AboutImgMobile}
+          alt="Montagnes"
+          className="img_banniere_mobile"
+        />
       </div>
       <div className="collapse_about">
         <DropDown

@@ -25,24 +25,43 @@
     width: 100%;
     height: auto;
 }
+.accueil_img_mobile {
+    display: none;
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .accueil_section {
         margin-top: 0px;
-        height: 111px;
     }
     .accueil_img {
-        background-image: url("../../assets/MobileHeaderImg.jpg");
+        display: none;
+    }
+    .accueil_img_mobile {
+        display: block;
         background-position: bottom;
         object-fit: cover;
-        height: 111px;
+        width: 100%;
         border-radius: 10px;
+        filter: brightness(0.7);
     }
     .accueil_title {
         font-size: 24px;
         line-height: 24px;
         width: 62%;
         left: 10%;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .accueil_section {
+        margin-top: 30px;
+    }
+    .accueil_title {
+        font-size: 38px;
+    }
+    .accueil_img_mobile{
+        display: none;
     }
     
 }

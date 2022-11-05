@@ -1,5 +1,6 @@
 import HeaderImg from "../../assets/HeaderImg.jpg";
 import HomeCards from "../../components/HomeCards";
+import MobileHeaderImg from "../../assets/MobileHeaderImg.jpg";
 import "./accueil.css";
 
 function Accueil() {
@@ -10,6 +11,11 @@ function Accueil() {
         <img
           className="accueil_img"
           src={HeaderImg}
+          alt="Une fôret avec de l'eau et de rochers"
+        />
+        <img
+          className="accueil_img_mobile"
+          src={MobileHeaderImg}
           alt="Une fôret avec de l'eau et de rochers"
         />
       </section>

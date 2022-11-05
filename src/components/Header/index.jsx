@@ -15,9 +15,10 @@ const StyledLink = styled(Link)`
   &:hover {
     text-decoration: underline;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     font-size: 12px;
     line-height: 16px;
+    text-transform: uppercase;
     &:first-child {
       margin-right: 10px;
     }

@@ -46,7 +46,7 @@
     line-height: 26px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .drop-bloc {
         margin-right: 0px;
     }
@@ -66,5 +66,11 @@
         margin-left: 12px;
         font-size: 12px;
         line-height: 17px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .drop-desc {
+        height: auto;
     }
 }
