@@ -3,7 +3,7 @@ import logementsData from "../../datas/logementsData";
 import { useParams } from "react-router-dom";
 import DropDownLogement from "../../components/DropDownLogement";
 import Error from "../Error";
-import "./logements.css";
+import "./logements.scss";
 import starFull from "../../assets/EtoileCouleur.svg";
 import starEmpty from "../../assets/EtoileGris.svg";
 

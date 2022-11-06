@@ -1,0 +1,75 @@
+$breakpoints : (
+    "mobile" : 767px,
+    "tablette-min-width" : 768px,
+    "tablette-max-width" : 1023px, 
+);
+
+@mixin tablette ($_keymin,$_keymax){
+    @media screen and (min-width: map-get($breakpoints,$_keymin)) and (max-width: map-get($breakpoints,$_keymax)) {
+        &{@content};
+    }
+}
+@mixin mobile ($_key) {
+    @media screen and (max-width: map-get($breakpoints,$_key)) {
+        &{@content};
+    }
+}
+.accueil_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    width: 100%;
+    @include mobile ("mobile") {
+        margin-top: 0px;
+    }
+    @include tablette ("tablette-min-width","tablette-max-width") {
+        margin-top: 30px;
+    }
+}
+
+.accueil_title {
+    position: absolute;
+    z-index: 9999;
+    color: white;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 68px;
+    @include mobile ("mobile") {
+        font-size: 24px;
+        line-height: 24px;
+        width: 62%;
+        left: 10%;
+    }
+    @include tablette ("tablette-min-width","tablette-max-width") {
+        font-size: 38px;
+    }
+}
+
+.accueil_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    position: relative;
+    filter: brightness(0.7);
+    width: 100%;
+    height: auto;
+    @include mobile ("mobile") {
+        display: none;
+    }
+}
+.accueil_img_mobile {
+    display: none;
+    @include mobile ("mobile") {
+        display: block;
+        background-position: bottom;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 10px;
+        filter: brightness(0.7);
+    }
+    @include tablette ("tablette-min-width","tablette-max-width") {
+        display: none;
+    }
+}

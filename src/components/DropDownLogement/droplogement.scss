@@ -1,6 +1,26 @@
+$breakpoints : (
+    "mobile" : 767px,
+    "tablette-min-width" : 768px,
+    "tablette-max-width" : 1023px, 
+);
+
+@mixin tablette ($_keymin,$_keymax){
+    @media screen and (min-width: map-get($breakpoints,$_keymin)) and (max-width: map-get($breakpoints,$_keymax)) {
+        &{@content};
+    }
+}
+@mixin mobile ($_key) {
+    @media screen and (max-width: map-get($breakpoints,$_key)) {
+        &{@content};
+    }
+}
+
 .drop-bloc {
     flex:1;
     margin-right: 75px;
+    @include mobile ("mobile") {
+        margin-right: 0px;
+    }
 }
 
 .drop-bloc:last-of-type{
@@ -23,6 +43,18 @@
     font-family: montserrat;
     font-size: 20px;
     color: #F2F2F2;
+    @include mobile ("mobile") {
+        font-size: 13px;
+        line-height: 19px;
+        height: 30px;
+    }
+}
+
+.flecheBas, .flecheHaut {
+    @include mobile ("mobile") {
+        height: 15px;
+        width: 15px;
+    }
 }
 
 .drop-desc {
@@ -36,6 +68,12 @@
     top: -5px;
     z-index: -1;
     height: 200px;
+    @include mobile ("mobile") {
+        height: auto;
+    }
+    @include tablette ("tablette-min-width", "tablette-max-width") {
+        height: auto;
+    }
 }
 
 .drop-desc p {
@@ -44,33 +82,9 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
-}
-
-@media screen and (max-width: 767px) {
-    .drop-bloc {
-        margin-right: 0px;
-    }
-    .drop-btn {
-        font-size: 13px;
-        line-height: 19px;
-        height: 30px;
-    }
-    .flecheBas,.flecheHaut {
-        height: 15px;
-        width: 15px;
-    }
-    .drop-desc {
-        height: auto;
-    }
-    .drop-desc p {
+    @include mobile ("mobile") {
         margin-left: 12px;
         font-size: 12px;
         line-height: 17px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .drop-desc {
-        height: auto;
     }
 }

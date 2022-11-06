@@ -1,7 +1,7 @@
 import HeaderImg from "../../assets/HeaderImg.jpg";
 import HomeCards from "../../components/HomeCards";
 import MobileHeaderImg from "../../assets/MobileHeaderImg.jpg";
-import "./accueil.css";
+import "./accueil.scss";
 
 function Accueil() {
   return (

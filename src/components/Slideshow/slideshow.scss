@@ -1,13 +1,38 @@
+$breakpoints : (
+    "mobile" : 767px,
+    "tablette-min-width" : 768px,
+    "tablette-max-width" : 1023px, 
+);
+
+@mixin tablette ($_keymin,$_keymax){
+    @media screen and (min-width: map-get($breakpoints,$_keymin)) and (max-width: map-get($breakpoints,$_keymax)) {
+        &{@content};
+    }
+}
+@mixin mobile ($_key) {
+    @media screen and (max-width: map-get($breakpoints,$_key)) {
+        &{@content};
+    }
+}
+
 .carousel {
     position: relative;
     height: 415px;
+    @include mobile ("mobile") {
+        height: 255px;
+    }
 }
 .carousel-img {
     width: 100%;
     object-fit: cover;
     height: 415px;
     border-radius: 25px;
+    @include mobile ("mobile") {
+        height: 255px;
+        border-radius: 10px;
+    }
 }
+
 .carousel-btn-left {
     position: absolute;
     height: 79.2px;
@@ -30,6 +55,13 @@
 .carousel-btn-right:hover {
     cursor: pointer;
 }
+
+.carousel-btn-left, .carousel-btn-right {
+    @include mobile ("mobile") {
+        height: 19.8px;
+    }
+}
+
 .counter-pic {
     position: absolute;
     height: 79.2px;
@@ -38,23 +70,11 @@
     z-index: 10;
     color: #F2F2F2;
     font-weight: 500;
+    @include mobile ("mobile") {
+        right: 45%;
+    }
 }
 .place-slide {
     margin: 0;
 }
 
-@media screen and (max-width: 767px) {
-    .carousel {
-        height: 255px;
-    }
-    .carousel-img {
-        height: 255px;
-        border-radius: 10px;
-    }
-    .carousel-btn-left,.carousel-btn-right {
-        height: 19.8px;
-    }
-    .counter-pic {
-        right: 45%;
-    }
-}

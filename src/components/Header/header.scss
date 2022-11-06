@@ -1,0 +1,28 @@
+$breakpoints : (
+    "mobile" : 767px,
+    "tablette-min-width" : 768px,
+    "tablette-max-width" : 1023px, 
+);
+
+@mixin tablette ($_keymin,$_keymax){
+    @media screen and (min-width: map-get($breakpoints,$_keymin)) and (max-width: map-get($breakpoints,$_keymax)) {
+        &{@content};
+    }
+}
+@mixin mobile ($_key) {
+    @media screen and (max-width: map-get($breakpoints,$_key)) {
+        &{@content};
+    }
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_img {
+    @include mobile ("mobile") {
+        width: 145px;
+    }
+}
+

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logementsData from "../../datas/logementsData";
 import styled from "styled-components";
-import "./homeCards.css";
+import "./homeCards.scss";
 
 const StyledLink = styled(Link)`
   text-decoration: none;

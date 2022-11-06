@@ -1,4 +1,4 @@
-import "./about.css";
+import "./about.scss";
 
 import AboutImg from "../../assets/AboutImg.jpg";
 import DropDown from "../../components/Dropdown";

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./slideshow.css";
+import "./slideshow.scss";
 import flecheDroite from "../../assets/VectorDroite.png";
 import flecheGauche from "../../assets/VectorGauche.png";
 

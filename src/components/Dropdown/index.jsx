@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./dropdown.css";
+import "./dropdown.scss";
 import flecheHaut from "../../assets/Drop.svg";
 import flecheBas from "../../assets/DropDownBas.svg";
 

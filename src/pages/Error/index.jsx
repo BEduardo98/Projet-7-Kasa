@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import "./error.css";
+import "./error.scss";
 
 const StyledLink = styled(Link)`
   color: #ff6060;

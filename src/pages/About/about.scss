@@ -1,0 +1,58 @@
+$breakpoints : (
+    "mobile" : 767px,
+    "tablette-min-width" : 768px,
+    "tablette-max-width" : 1023px, 
+);
+
+@mixin tablette ($_keymin,$_keymax){
+    @media screen and (min-width: map-get($breakpoints,$_keymin)) and (max-width: map-get($breakpoints,$_keymax)) {
+        &{@content};
+    }
+}
+@mixin mobile ($_key) {
+    @media screen and (max-width: map-get($breakpoints,$_key)) {
+        &{@content};
+    }
+}
+
+.collapse_about {
+    padding: 0 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mobile ("mobile") {
+        padding: 0;
+    }
+}
+
+.img_banniere {
+    border-radius: 25px;
+    position: relative;
+    filter: brightness(0.7);
+    width: 100%;
+    height: auto;
+    @include mobile ("mobile") {
+        display: none;
+    }
+}
+.img_banniere_mobile {
+    display: none;
+    @include mobile ("mobile") {
+        display: block;
+        object-fit: cover;
+        height: 223px;
+        width: 100%;
+        filter: brightness(0.7);
+        border-radius: 25px;
+    }
+}
+
+.titre {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    @include mobile ("mobile") {
+        font-size: 13px;
+        line-height: 19px;
+    }
+}
